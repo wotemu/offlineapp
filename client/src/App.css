@@ -4,7 +4,7 @@ img {
 
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat;
+  background: url('./img/ertale.png') no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -36,4 +36,54 @@ img {
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+.ertale {
+  background: url('./img/ertale.png') no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.ertale1 {
+  background: url('./img/abiyata.png') no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.registerForm {
+  color: white;
+}
+
+.formPadding {
+  padding-bottom: 30px;
+}
+
+.SubmitBtn {
+  height: 60px;
+}
+
+.MapPaddingTop {
+  margin-top: 30px;
+}
+
+.AboutRock {
+  color: black;
+}
+
+.AboutContent {
+  color: black;
+}
+
+.haile {
+  padding-top: 15px;
+}
+
+a.haile:hover {
+  width: 150%;
+  height: 150%;
+  float: left;
 }

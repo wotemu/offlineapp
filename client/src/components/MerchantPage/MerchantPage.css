@@ -1,0 +1,205 @@
+.highlights {
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+
+}
+
+.sectionVideo {
+  background-color: lightgray;
+  padding: 30px;
+
+}
+
+.videoCenter {
+  margin: auto;
+  width: 50%;
+}
+
+.videoDescription {
+  color: dodgerblue;
+  background-color: #fff;
+  margin-right: -89px;
+  padding: 10px;
+}
+
+.AboutSection {
+  background: url('./image/bale.jpg') no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.About {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.AboutHeader {
+  color: white;
+  font-style: bold;
+  font-size: 20px;
+
+}
+
+.AboutBody {
+  color: white;
+  text-align: justify;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.NewsSection {
+  background-color: white;
+  padding: 10px;
+
+}
+
+.NewsDate {
+  color: black;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.MainContainer {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.NewsHeader {
+  color: black;
+  line-height: 14px;
+  font-style: bold;
+}
+
+.NewsBody {
+  color: black;
+  text-align: justify;
+  line-height: 10px;
+
+}
+
+.NewsContent {
+  font-size: 14px;
+  line-height: 150%;
+  padding: 5px;
+}
+
+.readMore {
+  color: #82c3ff;
+  font-size: 16px;
+}
+
+.MapSection {}
+
+.recently {
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+
+}
+
+.latestReview {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.hero {
+  flex-grow: 1;
+  justify-content: flex-end;
+
+
+}
+
+.VideoCenter {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+
+}
+
+.PromotionBackground {
+  background-color: lightgray;
+
+}
+
+.PromotionMargin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.PromotionContent {
+  background-color: #fff;
+  color: dodgerblue;
+}
+
+.AboutSectionContainer {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+.cardBody {
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  flex-shrink: 0;
+  margin-right: 36px;
+}
+
+.info {
+  flex: 1;
+}
+
+.heading {
+  margin: 20px 0 0 0;
+
+
+}
+
+.link {
+  white-space: nowrap;
+}
+
+.mobileBio,
+.desktopBio {
+  /* Preserve newlines, but collapse other whitespace */
+  white-space: pre-line;
+  margin: 18px 0 0 0;
+  transition: all 1s ease-in;
+}
+
+.showMore {
+  color: dodgerblue;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.MainHeader {
+  font-size: 20px;
+  font-style: bold;
+}
+
+.my-carousel {
+  padding-bottom: 20px;
+
+}
+
+.carousel {}

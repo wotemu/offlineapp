@@ -1,0 +1,33 @@
+.highlights {
+  text-align: center;
+  background-color: dodgerblue;
+  padding: 15px;
+}
+
+.proBack {
+  background-color: dodgerblue;
+  padding: 20px;
+
+}
+
+
+.StartingFrom {
+  color: darkgray;
+  font-style: italic;
+  font-size: 12px;
+  float: right;
+}
+
+.StartingFromCurrency {
+  color: dodgerblue;
+  float: right;
+}
+
+.cardBody {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.colMarginBottom {
+  padding-bottom: 20px;
+}
