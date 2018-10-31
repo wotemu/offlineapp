@@ -5,7 +5,6 @@ class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true,
       contacts: []
     };
   }
@@ -13,31 +12,12 @@ class About extends React.Component {
   componentWillMount() {
     localStorage.getItem("contacts") &&
       this.setState({
-        contacts: JSON.parse(localStorage.getItem("contacts")),
-        isLoading: false
+        contacts: JSON.parse(localStorage.getItem("contacts"))
       });
-  }
-
-  componentDidMount() {
-    const date = localStorage.getItem("contactsDate");
-    const contactsDate = date && new Date(parseInt(date));
-    const now = new Date();
-
-    const dataAge = Math.round((now - contactsDate) / (1000 * 60)); // in minutes
-    const tooOld = dataAge >= 1;
-
-    if (tooOld) {
-      this.fetchData();
-    } else {
-      console.log(
-        `Using data from localStorage that are ${dataAge} minutes old.`
-      );
-    }
   }
 
   fetchData() {
     this.setState({
-      isLoading: true,
       contacts: []
     });
 
@@ -46,15 +26,12 @@ class About extends React.Component {
       .then(parsedJSON =>
         parsedJSON.results.map(user => ({
           name: `${user.name.first} ${user.name.last}`,
-          username: `${user.login.username}`,
-          email: `${user.email}`,
-          location: `${user.location.street}, ${user.location.city}`
+          username: `${user.login.username}`
         }))
       )
       .then(contacts =>
         this.setState({
-          contacts,
-          isLoading: false
+          contacts
         })
       )
       .catch(error => console.log("parsing failed", error));
@@ -69,38 +46,14 @@ class About extends React.Component {
     const { isLoading, contacts } = this.state;
     return (
       <div>
-        <header>
-          <h1>
-            Fetching Data{" "}
-            <button
-              className="btn btn-sm btn-danger"
-              onClick={e => {
-                this.fetchData();
-              }}
-            >
-              Fetch now
-            </button>
-          </h1>
-        </header>
         <div className={`content ${isLoading ? "is-loading" : ""}`}>
           <div className="panel-group">
             {!isLoading && contacts.length > 0
               ? contacts.map(contact => {
-                  const { username, name, email, location } = contact;
-                  return (
-                    <ContactUs key={username} title={name}>
-                      <p>
-                        {email}
-                        <br />
-                        {location}
-                      </p>
-                    </ContactUs>
-                  );
+                  const { username, name } = contact;
+                  return <ContactUs key={username} title={name} />;
                 })
               : null}
-          </div>
-          <div className="loader">
-            <div className="icon" />
           </div>
         </div>
       </div>

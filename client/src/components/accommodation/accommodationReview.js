@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import StarRatingComponent from "react-star-rating-component";
 
-class Rating extends Component {
+class AccommodationRating extends Component {
   constructor() {
     super();
 
     this.state = {
-      rating: 3
+      rating: 4
     };
   }
 
@@ -16,7 +16,7 @@ class Rating extends Component {
   render() {
     const { rating } = this.state;
     return (
-      <div className="SpecialWeekPackage">
+      <div className="Accomodationratings">
         <StarRatingComponent
           name="rate1"
           starCount={5}
@@ -28,4 +28,4 @@ class Rating extends Component {
   }
 }
 
-export default Rating;
+export default AccommodationRating;

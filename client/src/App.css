@@ -82,8 +82,93 @@ img {
   padding-top: 15px;
 }
 
-a.haile:hover {
-  width: 150%;
-  height: 150%;
-  float: left;
+
+i.fa {
+  color: #333333;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 6px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.marginLeft {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+ul.PostComments {
+  list-style: none;
+}
+
+.BorderBottom {
+  border: 1px solid lightgray;
+}
+
+.ImagePaddingRight {
+  padding-right: 20px;
+}
+
+.Accomodationratings {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+}
+
+.SpecialWeekPackage {
+  text-align: center;
+  font-size: 28px;
+}
+
+.ImagePaddingTop {
+  padding-top: 20px;
+}
+
+
+.fbShareBtn {
+  background-color: #3b5998;
+  color: white;
+  font: bold;
+  height: 25px;
+  border: none;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 3px;
+
+}
+
+.headerBackground {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 10px;
+}
+
+.ImagePaddingTop {
+  padding-top: 20px;
+}
+
+.myCredentials {
+  background-color: dodgerblue;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbarBackground {
+  border-bottom: 5px solid black;
+  color: #333333;
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: white;
 }

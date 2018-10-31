@@ -77,19 +77,11 @@
   color: #40E0D0;
 }
 
-.colfooter {
-  color: #fff;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0;
-}
 
 .float-left {
   list-style-type: none;
   margin: 0;
-  padding-top: 30px;
   overflow: hidden;
-  padding: 16px 16px 0 0;
 }
 
 .float-left>li {
@@ -99,7 +91,7 @@
 
 .left-link {
   display: block;
-  color: #DCDCDC;
+  color: #fff;
   text-align: center;
   padding: 16px 16px 0 0;
   text-decoration: none;
@@ -107,6 +99,11 @@
 
 .link {
   color: #fff;
+}
+
+.my-link {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .copy-right {

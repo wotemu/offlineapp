@@ -26,9 +26,9 @@ import Post from "./components/post/Post";
 import NotFound from "./components/not-found/NotFound";
 import MerchantPage from "./components/MerchantPage/MerchantPage";
 import FooterLinks from "./components/footerLinks";
-import Events from "./components/events";
-import TourGuide from "./components/tourGuide";
-import Accommodation from "./components/accommodation";
+import Events from "./components/events/events";
+import TourGuide from "./components/tourGuide/tourGuide";
+import Accommodation from "./components/accommodation/accommodation";
 
 import "./App.css";
 
@@ -61,7 +61,7 @@ class App extends Component {
           <div className="App">
             <Navbar />
             <Route exact path="/" component={MerchantPage} />
-            <Route exact path="/rentals" component={Landing} />
+            <Route exact path="/registeration" component={Landing} />
             <Route exact path="/events" component={Events} />
             <Route exact path="/tour" component={TourGuide} />
             <Route exact path="/accommodation" component={Accommodation} />

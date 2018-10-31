@@ -14,7 +14,7 @@ const rentalsPage = (
     <img
       className="card-img-top"
       src={ImageOne}
-      alt="bhcimage"
+      alt="ImageOne"
       style={{
         display: "block",
         maxWidth: "100%",
@@ -22,6 +22,9 @@ const rentalsPage = (
         height: "auto"
       }}
     />
+    <span className="eventsCenter">
+      <button className="btn btn-primary">Events</button>
+    </span>
   </Link>
 );
 
@@ -30,7 +33,7 @@ const guidedToursPage = (
     <img
       className="card-img-top"
       src={ImageTwo}
-      alt="bhcimage"
+      alt="ImageTwo"
       style={{
         display: "block",
         maxWidth: "100%",
@@ -38,6 +41,9 @@ const guidedToursPage = (
         height: "auto"
       }}
     />
+    <span className="eventsCenter">
+      <button className="btn btn-primary">Tours</button>
+    </span>
   </Link>
 );
 
@@ -46,7 +52,7 @@ const accomodationPage = (
     <img
       className="card-img-top"
       src={ImageThree}
-      alt="bhcimage"
+      alt="ImageThree"
       style={{
         display: "block",
         maxWidth: "100%",
@@ -54,6 +60,9 @@ const accomodationPage = (
         height: "auto"
       }}
     />
+    <span className="eventsCenter2">
+      <button className="btn btn-primary">Accommodations</button>
+    </span>
   </Link>
 );
 
@@ -62,7 +71,7 @@ const eventsPage = (
     <img
       className="card-img-top"
       src={ImageFour}
-      alt="bhcimage"
+      alt="ImageFour"
       style={{
         display: "block",
         maxWidth: "100%",
@@ -70,6 +79,9 @@ const eventsPage = (
         height: "auto"
       }}
     />
+    <span className="eventsCenter">
+      <button className="btn btn-primary">Festivals</button>
+    </span>
   </Link>
 );
 

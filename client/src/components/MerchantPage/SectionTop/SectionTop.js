@@ -9,8 +9,8 @@ class SectionTop extends Component {
   render() {
     return (
       <div className="container">
-        <div className="proBack">
-          <h1 className="highlights">Weekly packages</h1>
+        <div className="proBack2">
+          <h1 className="highlights headerBackground">Weekly packages</h1>
           <div className="row">
             <div className="col-md-6">
               <div className="colMarginBottom">
@@ -29,12 +29,12 @@ class SectionTop extends Component {
                   <div className="cardBody">
                     <div className="card-body">
                       <h4 className="card-title">
-                        special Package
+                        Special Package
                         <span className="StartingFrom">starting from</span>
                       </h4>
                       <div className="card-text">
-                        special week package
-                        <span className="StartingFromCurrency">€250</span>
+                        Special week package to Liisak resort, Bishoftu
+                        <span className="StartingFromCurrency">€150</span>
                       </div>
                       <ReviewRating />
                     </div>
@@ -60,12 +60,12 @@ class SectionTop extends Component {
                     <div className="card-body">
                       <h4 className="card-title">
                         {" "}
-                        special package
+                        Special package
                         <span className="StartingFrom">starting from</span>
                       </h4>
                       <div className="card-text">
-                        special week package
-                        <span className="StartingFromCurrency">€250</span>
+                        Special week package to Haile resort, Hawassa
+                        <span className="StartingFromCurrency">€200</span>
                       </div>
                       <ReviewRating />
                     </div>

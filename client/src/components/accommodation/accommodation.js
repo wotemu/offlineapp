@@ -1,10 +1,13 @@
 import React from "react";
-import image1 from "./MerchantPage/image/haile.jpg";
-import image2 from "./MerchantPage/image/lodge.jpg";
-import image3 from "./MerchantPage/image/lodge2.jpg";
-import SectionMap from "./MerchantPage/SectionMap/SectionMap";
-import SectionReadMore from "./MerchantPage/SectionReadMore";
-import Posts from "../components/posts/Posts";
+import image1 from "../MerchantPage/image/haile.jpg";
+import image2 from "../MerchantPage/image/lodge.jpg";
+import image3 from "../MerchantPage/image/lodge2.jpg";
+import SectionMap from "./SectionMap/SectionMap";
+import SectionReadMore from "../MerchantPage/SectionReadMore";
+import AccommodationReview from "./accommodationReview";
+import HistoricalSites from "../historicalSites/historicalSites";
+//import Posts from "./post/Post";
+import List from "./list";
 
 const aboutContent = ` Our resort offers high-end luxury in an Ethiopian paradise setting. Breathtaking landscapes encompass the resort as guests enjoy the natural wonders of Lake Kuriftu.
 
@@ -20,24 +23,31 @@ const about = (
 );
 
 const Accommodation = () => (
-  <div className="container">
+  <div className="container paddingTop">
     <div className="row">
       <div className="col-md-8 ">
-        <h3>Welcome to Kuriftu Lodge, Bishoftu Ethiopia</h3>
-        <img src={image1} alt="" />
+        <h3 className="headerBackground">
+          Welcome to Kuriftu Lodge, Bishoftu Ethiopia
+        </h3>
+        <img src={image1} alt="" className="ImagePaddingTop" />
+        <AccommodationReview />
         <div className="comments">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Comments</h5>
-              <Posts />
+              <List />
             </div>
           </div>
+        </div>
+        <div>
+          <HistoricalSites />
         </div>
       </div>
       <div className="col-md-4 ">
         <div className="card">
           <div className="card-body">
-            <h5 className="card-title">Welcome to Kuriftu lodge</h5>
+            <h5 className="card-title headerBackground">
+              Welcome to Kuriftu lodge
+            </h5>
             <div className="card-text"> {about}</div>
             <a
               href="https://kurifturesorts.com/"
@@ -51,9 +61,7 @@ const Accommodation = () => (
           <img src={image2} alt="" />
         </div>
         <div className="card">
-          <a href="" className="haile">
-            <img src={image3} alt="" />
-          </a>
+          <img src={image3} alt="" className="haile" />
         </div>
 
         <div className="MapSection MapPaddingTop">

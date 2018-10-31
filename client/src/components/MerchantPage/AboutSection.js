@@ -8,9 +8,7 @@ const aboutContent =
   "TourGuide is your online destination for planning a tour holiday in Ethiopia. We offer an overview  booking options for tour guide services, car rentals and accommodation. TourGuide is your online destination for planning a tour holiday in Ethiopia. We offer an overview  booking options for tour guide services, car rentals and accommodation. TourGuide is your online destination for planning a tour holiday in Ethiopia. We offer an overview..";
 const about = (
   <div className="AboutBody">
-    <p className="AboutContent">
-      <SectionReadMore bio={aboutContent} />
-    </p>
+    <SectionReadMore bio={aboutContent} />
   </div>
 );
 
