@@ -11,10 +11,6 @@
 
 }
 
-.videoCenter {
-  margin: auto;
-  width: 50%;
-}
 
 .videoDescription {
   color: dodgerblue;
@@ -120,12 +116,23 @@
 
 }
 
-.VideoCenter {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 20px;
-
+video {
+  width: 100%;
+  height: auto;
 }
+
+.VideoCenter {
+  width: 98%;
+  padding: 5%;
+  text-align: center;
+}
+
+.react-player {
+  width: 100%;
+  height: auto;
+}
+
+
 
 .PromotionBackground {
   background-color: dodgerblue;

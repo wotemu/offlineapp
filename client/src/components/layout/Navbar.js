@@ -39,7 +39,7 @@ class Navbar extends Component {
               src={user.avatar}
               alt={user.name}
               style={{ width: "25px", marginRight: "5px" }}
-              title="You must have a Gravatar connected to your email to display an image"
+              title="You must have a Gravatar "
             />{" "}
             Logout
           </a>
@@ -74,7 +74,7 @@ class Navbar extends Component {
             data-toggle="collapse"
             data-target="#mobile-nav"
           >
-            <span className="navbar-toggler-icon" />
+            <i className="fas fa-bars" />
           </button>
 
           <div className="collapse navbar-collapse" id="mobile-nav">

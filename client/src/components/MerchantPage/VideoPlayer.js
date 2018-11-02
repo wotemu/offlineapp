@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 //import { FormattedMessage } from "react-intl";
-import ReactPlayer from "react-player";
+//import ReactPlayer from "react-player";
 import SectionReadMore from "./SectionReadMore";
 import videoplayback from "./videoplayback.mp4";
 import "./MerchantPage.css";
@@ -22,15 +22,13 @@ class VideoPlayer extends Component {
       <div className="container">
         <div className="PromotionBackground">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-2" />
+            <div className="col-md-8">
               <div className="VideoCenter">
                 <div className="card">
-                  <ReactPlayer
-                    url={videoplayback}
-                    className="react-player"
-                    width="auto"
-                    controls
-                  />
+                  <video width="400" controls>
+                    <source src={videoplayback} type="video/mp4" />
+                  </video>
                   <div className="card-body">
                     <div className="cardBody">
                       <h4 className="card-title">
@@ -44,6 +42,7 @@ class VideoPlayer extends Component {
                 </div>
               </div>
             </div>
+            <div className="col-md-2" />
           </div>
         </div>
       </div>
