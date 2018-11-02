@@ -3,6 +3,7 @@ import React, { Component } from "react";
 //import { FormattedMessage } from "react-intl";
 import ReactPlayer from "react-player";
 import SectionReadMore from "./SectionReadMore";
+import videoplayback from "./videoplayback.mp4";
 import "./MerchantPage.css";
 
 const videoContent = `Timkat (also known as Timket) is an Orthodox Christian celebration of the Ethiopian Epiphany. It marks the baptism of Jesus Christ in the Jordan River.
@@ -25,9 +26,10 @@ class VideoPlayer extends Component {
               <div className="VideoCenter">
                 <div className="card">
                   <ReactPlayer
-                    url="https://www.youtube.com/watch?v=jrCRQUk0naw"
+                    url={videoplayback}
                     className="react-player"
                     width="auto"
+                    controls
                   />
                   <div className="card-body">
                     <div className="cardBody">

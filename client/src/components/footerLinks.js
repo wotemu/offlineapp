@@ -4,6 +4,7 @@ import Facebook from "../img/facebook.jpg";
 import Youtube from "../img/youtube.jpg";
 import Instagram from "../img/instagram.jpg";
 import Twitter from "../img/twitter.jpg";
+import videoplayback from "./MerchantPage/videoplayback.mp4";
 
 const FooterLinks = () => (
   <footer className="bg-dark text-white mt-5 p-4 text-center">
@@ -33,9 +34,9 @@ const FooterLinks = () => (
         <div className="col-lg-4 colfooter social">
           <ul className="float-right">
             <li className="left-link">
-              <a href="https://www.facebook.com/" className="link">
+              <Link className="link" to="/registeration">
                 <img src={Facebook} alt="" />
-              </a>
+              </Link>
             </li>
             <li className="left-link">
               <Link className="link" to="/registeration">
@@ -48,10 +49,7 @@ const FooterLinks = () => (
               </Link>
             </li>
             <li className="left-link">
-              <a
-                href="https://www.youtube.com/watch?v=jrCRQUk0naw"
-                className="link"
-              >
+              <a href={videoplayback} className="link">
                 <img src={Youtube} alt="" />
               </a>
             </li>

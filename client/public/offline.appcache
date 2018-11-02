@@ -98,6 +98,7 @@ src/components/MerchantPage/MerchantPage.js
 src/components/MerchantPage/NewsSection.js
 src/components/MerchantPage/SectionReadMore.js
 src/components/MerchantPage/VideoPlayer.js
+src/components/MerchantPage/videoplayback.mp4
 src/components/not-found/NotFound.js
 src/components/footerLinks.js
 
@@ -139,5 +140,7 @@ src/reducers/index.js
 src/registerServiceWorker.js
 src/serviceWorker.js
 
+NETWORK:
+*
 
 
